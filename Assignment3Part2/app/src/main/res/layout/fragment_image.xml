@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="rw1.cmu.edu.assignment3part2.ui.ImageFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:id="@+id/imageView"
+            android:layout_margin="10dp"
+            android:src="@drawable/image1"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Previous"
+                android:id="@+id/button9"
+                android:onClick="prevpic" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Next"
+                android:id="@+id/button10"
+                android:onClick="nextpic" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
